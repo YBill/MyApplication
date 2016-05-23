@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="#ffffff">
+
+    <FrameLayout
+        android:id="@+id/i_anchor_frist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_anchor"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            fresco:placeholderImage="@drawable/anchor_head_portrait"
+            fresco:roundAsCircle="true" />
+
+        <ImageView
+            android:id="@+id/iv_staff_voice"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="44.5dp"
+            android:layout_marginTop="4.5dp"
+            android:src="@drawable/voice" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/i_anchor_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/i_anchor_frist"
+        android:visibility="gone">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_anchor_second"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            fresco:placeholderImage="@drawable/anchor_head_portrait"
+            fresco:roundAsCircle="true" />
+
+        <ImageView
+            android:id="@+id/iv_staff_voice_second"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="44.5dp"
+            android:layout_marginTop="4.5dp"
+            android:src="@drawable/voice" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/i_anchor_second"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_staff_more"
+        android:layout_width="10dp"
+        android:layout_height="15dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="9dp"
+        android:layout_toRightOf="@+id/ll_parent"
+        android:src="@drawable/icon_live_more" />
+
+    <RelativeLayout
+        android:id="@+id/rl_mike"
+        style="@style/AlertDialog.AppCompat"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/shape_onmike"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_icon_mike"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:src="@android:drawable/ic_btn_speak_now"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_mike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/iv_icon_mike"
+            android:text="上麦"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+    </RelativeLayout>
+</RelativeLayout>

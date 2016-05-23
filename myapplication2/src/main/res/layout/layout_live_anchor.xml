@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="#ffffff"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_single_anchor"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:id="@+id/fl_anchor_single"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp">
+
+            <ImageView
+                android:id="@+id/iv_anchor_single"
+                android:layout_width="52dp"
+                android:layout_height="52dp" />
+
+            <ImageView
+                android:id="@+id/iv_single_voice"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="44.5dp"
+                android:layout_marginTop="4.5dp"
+                android:src="@drawable/voice" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_audience_single"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_audience_single_frist"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="6.5dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_audience_single_second"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="6dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_audience_single_third"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="-4dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_audience_single_fourth"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="-4dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_audience_single_more"
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="9dp"
+                android:src="@drawable/icon_live_more" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_double_anchor"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/fl_anchor_frist_double"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp">
+
+            <ImageView
+                android:id="@+id/iv_anchor_frist_double"
+                android:layout_width="52dp"
+                android:layout_height="52dp" />
+
+            <ImageView
+                android:id="@+id/iv_frist_double_voice"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="44.5dp"
+                android:layout_marginTop="4.5dp"
+                android:src="@drawable/voice" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_anchor_second_double"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp">
+
+            <ImageView
+                android:id="@+id/iv_anchor_second_double"
+                android:layout_width="52dp"
+                android:layout_height="52dp" />
+
+            <ImageView
+                android:id="@+id/iv_second_double_voice"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="44.5dp"
+                android:layout_marginTop="4.5dp"
+                android:src="@drawable/voice" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_audience_double"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_audience_double_frist"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="4.5dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_audience_double_second"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_audience_double_more"
+                android:layout_width="6.5dp"
+                android:layout_height="11.5dp"
+                android:layout_marginLeft="5.5dp"
+                android:src="@drawable/icon_live_more" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mike"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/shape_onmike"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_icon_mike"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:src="@android:drawable/ic_btn_speak_now" />
+
+        <TextView
+            android:id="@+id/tv_mike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/iv_icon_mike"
+            android:text="上麦"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_mike_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/shape_onmike"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
